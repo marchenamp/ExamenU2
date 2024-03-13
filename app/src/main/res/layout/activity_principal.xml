@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Principal">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="13dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_detalles"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/grupo2" />
+
+    <Button
+        android:id="@+id/btn_detalles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="17dp"
+        android:background="@drawable/round_button"
+        android:text="Detalles"
+        app:layout_constraintBottom_toTopOf="@+id/btn_globos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <Button
+        android:id="@+id/btn_globos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp"
+        android:background="@drawable/round_button"
+        android:text="Globos"
+        app:layout_constraintBottom_toTopOf="@+id/btn_peluches"
+        app:layout_constraintStart_toStartOf="@+id/btn_peluches"
+        app:layout_constraintTop_toBottomOf="@+id/btn_detalles" />
+
+    <Button
+        android:id="@+id/btn_peluches"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/round_button"
+        android:text="Peluches"
+        app:layout_constraintBottom_toTopOf="@+id/btn_regalos"
+        app:layout_constraintStart_toStartOf="@+id/btn_detalles"
+        app:layout_constraintTop_toBottomOf="@+id/btn_globos" />
+
+    <Button
+        android:id="@+id/btn_regalos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/round_button"
+        android:text="Regalos"
+        app:layout_constraintBottom_toTopOf="@+id/btn_tazas"
+        app:layout_constraintStart_toStartOf="@+id/btn_peluches"
+        app:layout_constraintTop_toBottomOf="@+id/btn_peluches" />
+
+    <Button
+        android:id="@+id/btn_tazas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="211dp"
+        android:background="@drawable/round_button"
+        android:text="Tazas"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/btn_regalos"
+        app:layout_constraintTop_toBottomOf="@+id/btn_regalos" />
+</androidx.constraintlayout.widget.ConstraintLayout>

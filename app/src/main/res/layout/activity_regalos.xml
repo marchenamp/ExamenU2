@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Regalos">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif-light"
+            android:text="Detalles"
+            android:textAllCaps="true"
+            android:textColor="@color/rosa"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="33dp"
+            android:background="@color/rosa"
+            android:textColor="@color/rosa" />
+
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/regalos_catalogo"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="18dp"
+        android:numColumns="3"
+        android:paddingHorizontal="6dp" />
+
+
+</LinearLayout>
